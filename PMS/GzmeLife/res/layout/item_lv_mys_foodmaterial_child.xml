@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cb_taste"
+        style="@style/tv_black_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_small"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:background="@drawable/shape_taste_unchecked"
+        android:button="@null"
+        android:ellipsize="end"
+        android:enabled="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="酸"
+        android:textColor="@drawable/selector_cb_my_foodmaterial_child" />
+
+</LinearLayout>

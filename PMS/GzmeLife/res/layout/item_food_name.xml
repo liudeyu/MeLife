@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_taste_unchecked"
+        android:gravity="center"
+        android:padding="@dimen/spacing_normal"
+        android:text="红椒"
+        android:ellipsize="end" 
+        android:singleLine="true"
+        android:textColor="@color/gray_more" />
+<!-- <CheckBox
+        android:id="@+id/tv_name"
+        style="@style/tv_black_normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_small"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:background="@drawable/selector_cb_my_foodmaterial_child"
+        android:button="@null"
+        android:ellipsize="end"
+        android:enabled="false"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="酸"
+        android:textColor="@drawable/selector_cb_my_foodmaterial_child" /> -->
+</LinearLayout>

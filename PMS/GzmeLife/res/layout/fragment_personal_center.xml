@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_myData"
+                style="@style/ll_normal" >
+
+                <com.gzmelife.app.views.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/icon_size_normal"
+                    android:layout_height="@dimen/icon_size_normal"
+                    android:src="@drawable/icon_default" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        style="@style/tv_black_normal"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="昵称" />
+
+                    <TextView
+                        android:id="@+id/tv_autograph"
+                        style="@style/tv_gray_dark_small"
+                        android:layout_marginTop="@dimen/spacing_tiny"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="个性签名" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_myUploadCookbook"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    android:id="@+id/tv_uploadNumber"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="查看菜谱上传记录（数量2）" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_foodMaterialManage"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="食材库管理" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_myCollection"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的收藏" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_myDevice"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的设备" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_faq"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="常见问题" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_aboutUs"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="关于我们" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_settings"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="设置" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/btn_full_width_white_text_red_bg"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_huge"
+                android:text="退出登录" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

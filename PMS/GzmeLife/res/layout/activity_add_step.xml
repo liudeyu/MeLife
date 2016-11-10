@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <!--界面 编辑步骤-->
+        <Button
+            android:id="@+id/btn_edtfood"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:text="食材" 
+            android:gravity="left|center_vertical"
+            android:background="@color/white"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:textColor="@color/black_dark"
+            android:textSize="@dimen/font_normal"
+            android:padding="@dimen/spacing_small"/>
+
+    <com.gzmelife.app.views.ListViewForScrollView
+        android:id="@+id/lv_food"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px" 
+        android:paddingBottom="10dp"
+        android:divider="@color/transparent"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/spacing_small" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="步骤描述："
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/edt_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:background="@color/white" 
+            android:hint="步骤描述"
+            android:maxLength="40"
+             android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/spacing_small" 
+        android:orientation="vertical">
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="时间"
+          android:padding="@dimen/spacing_small"
+          />
+      
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView 
+              android:id="@+id/tv_startTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/red"
+              android:text="0’00”"
+              android:layout_weight="1"
+              />
+          
+           <TextView 
+              android:id="@+id/tv_middleTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/red"
+              android:text="2’30”"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+              />
+          
+          <TextView 
+              android:id="@+id/tv_endTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/red"
+              android:text="5’00”"
+              android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+              />
+      </LinearLayout>
+      <SeekBar
+          android:id="@+id/sb_time"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:progressDrawable="@drawable/seekbar_img"
+          android:thumb="@drawable/seekbar_thumb"
+          />
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+           android:padding="@dimen/spacing_small"
+          >
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="你选择的时间:"
+              />
+		    <TextView 
+		        android:id="@+id/tv_nowTime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="0’00”"
+              android:textColor="@color/red"
+              />       
+      </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

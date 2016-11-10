@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" >
+    </include>
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/et_white_full_width_large_height_black"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@color/white"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:maxLength="11" />
+
+    <include layout="@layout/view_gray_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height_normal"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/et_authCode"
+            style="@style/et_white_full_width_large_height_black"
+            android:background="@color/white"
+            android:hint="验证码"
+            android:maxLength="6" />
+
+        <Button
+            android:id="@+id/btn_authCode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="@dimen/spacing_tiny"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:background="@drawable/shape_blue_bg"
+            android:paddingLeft="@dimen/spacing_normal"
+            android:paddingRight="@dimen/spacing_normal"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/et_white_full_width_large_height_black"
+        android:layout_marginBottom="@dimen/spacing_huge"
+        android:background="@color/white"
+        android:hint="请输入6-16位密码"
+        android:inputType="textPassword"
+        android:maxLength="16" />
+
+    <Button
+        android:id="@+id/btn_OK"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="确定" />
+
+    <LinearLayout
+        android:id="@+id/ll_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_protocol"
+            style="@style/tv_black_normal"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:button="@drawable/selector_rb"
+            android:checked="true"
+            android:paddingLeft="@dimen/spacing_tiny"
+            android:text="阅读并同意" />
+
+        <Button
+            android:id="@+id/btn_protocol"
+            style="@style/tv_title_normal"
+            android:background="@color/transparent"
+            android:text="软件许可及服务协议" />
+    </LinearLayout>
+
+</LinearLayout>

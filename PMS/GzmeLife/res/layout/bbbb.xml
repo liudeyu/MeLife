@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebarbg"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+        style="@style/tv_black_large"
+        android:text="传送到智能锅的菜谱"
+        android:layout_margin="@dimen/spacing_normal"/>
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageView 
+        android:layout_width="@dimen/icon_size_tiny"
+        android:layout_height="@dimen/icon_size_tiny"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_gravity="center"/>
+    
+    </LinearLayout>
+    
+    </LinearLayout>

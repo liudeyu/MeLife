@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_rb_class"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="@drawable/selector_rb_text" />
+
+        <RadioButton
+            android:id="@+id/rb_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_rb_class"
+            android:gravity="center"
+            android:text="最热"
+            android:textColor="@drawable/selector_rb_text" />
+
+        <RadioButton
+            android:id="@+id/rb_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/selector_rb_class"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@drawable/selector_rb_text"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/rv_goodfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none" 
+        android:numColumns="2"/>
+
+</LinearLayout>

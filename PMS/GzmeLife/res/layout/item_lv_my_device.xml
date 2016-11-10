@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_large"
+        android:background="@drawable/bg_kuai_add_device"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_small" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_black_normal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="123456" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/icon_size_face_30"
+            android:layout_height="@dimen/icon_size_face_30"
+            android:padding="@dimen/spacing_tiny"
+            android:src="@drawable/icon_delete" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_small" />
+
+</LinearLayout>

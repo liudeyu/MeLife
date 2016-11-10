@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_category"
+            style="@style/ll_normal"
+            android:onClick="onClick" >
+
+            <TextView
+                style="@style/tv_black_normal"
+                android:text="食材所属分类" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                style="@style/tv_black_normal"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/spacing_small"
+                android:paddingRight="25dp"
+                android:gravity="right"
+                android:text="自定义食材" />
+            <ImageView
+                    android:layout_width="@dimen/icon_size_tinest"
+                    android:layout_height="@dimen/icon_size_tinest"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right" />
+        </RelativeLayout>
+		
+        <include layout="@layout/view_gray_line" />
+
+        <LinearLayout style="@style/ll_normal_2" >
+
+            <TextView
+                style="@style/tv_black_normal"
+                android:text="食材名" />
+
+            <EditText
+                android:id="@+id/et_foodMaterialName"
+                style="@style/et_full_width_white_bg_right"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:hint="请输入食材名"
+                android:singleLine="true" 
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/et_foodMaterialNames"
+                style="@style/et_full_width_white_bg_right"
+                android:layout_alignParentRight="true"
+                 android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入食材名"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <include layout="@layout/view_gray_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:onClick="onClick"
+        android:text="保存" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="系统电压:" />
+
+                <TextView
+                    android:id="@+id/tv_v"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="系统电流:" />
+
+                <TextView
+                    android:id="@+id/tv_a"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="输出功率:" />
+
+                <TextView
+                    android:id="@+id/tv_w"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="实际锅温:" />
+
+                <TextView
+                    android:id="@+id/tv_pmsTemp"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="实际室温:" />
+
+                <TextView
+                    android:id="@+id/tv_roomTemp"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout style="@style/ll_normal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:text="当前状态:" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/tv_gray_normal"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:text="" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <com.gzmelife.app.views.ListViewForScrollView
+                android:id="@+id/lv_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

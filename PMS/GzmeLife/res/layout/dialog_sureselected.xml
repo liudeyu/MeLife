@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/spacing_large"
+    android:layout_marginRight="@dimen/spacing_large"
+    android:background="@drawable/dialog_corner"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corner"
+        android:orientation="vertical">
+
+
+       
+
+        <TextView
+            android:id="@+id/tv_tips_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_large"
+            android:text="是否继续添加被照护人信息？"
+            android:textColor="#3f3f3f"
+            android:textSize="@dimen/font_normal" />
+
+        
+         <include layout="@layout/view_gray_dark_line" />
+         
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+
+            >
+
+            
+
+            <TextView
+                android:id="@+id/tv_notsure"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+            
+            <View 
+                android:layout_width="0.8dp"
+                android:layout_height="40dp"
+                android:background="#ededed"/>
+            
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="#3f3f3f"
+                android:textSize="@dimen/font_normal" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

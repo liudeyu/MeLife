@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_base_title" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_goodfood"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white" />
+
+        <include layout="@layout/view_gray_line" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.gzmelife.app.views.GridViewForScrollView
+                android:id="@+id/gv_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:listSelector="@color/transparent"
+                android:numColumns="4"
+                android:paddingBottom="@dimen/spacing_normal"
+                android:paddingTop="@dimen/spacing_normal"
+                android:verticalSpacing="@dimen/spacing_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="137dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_gray_line" />
+
+        <RelativeLayout style="@style/ll_normal" >
+
+            <TextView
+                android:id="@+id/tv_all"
+                style="@style/tv_gray_more_normal"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:paddingBottom="@dimen/spacing_small"
+                android:paddingRight="@dimen/spacing_small"
+                android:paddingTop="@dimen/spacing_small"
+                android:text="全选" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/iv_car"
+                    android:layout_width="@dimen/icon_size_tiny"
+                    android:layout_height="@dimen/icon_size_tiny"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/icon_car" />
+
+                <TextView
+                    android:id="@+id/tv_selectNum"
+                    style="@style/tv_white_small"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/shape_titlecolor_voal"
+                    android:gravity="center"
+                    android:text="0" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/view_gray_line" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/btn_full_width_white_text_red_bg"
+            android:layout_margin="@dimen/spacing_normal"
+            android:onClick="onClick"
+            android:text="确定" />
+    </LinearLayout>
+
+</RelativeLayout>

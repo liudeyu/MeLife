@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <LinearLayout style="@style/ll_normal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_black_normal"
+            android:text="错误:" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/tv_title_normal"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:text="" />
+    </LinearLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+</LinearLayout>

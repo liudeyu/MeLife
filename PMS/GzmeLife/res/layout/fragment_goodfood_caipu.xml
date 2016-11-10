@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gzmelife.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_normal"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rg_foodOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_gray_bg_2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_cookbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seletcor_top_goodfood"
+                android:button="@null"
+                android:text="菜谱"
+                android:textColor="@drawable/selector_rb_text" />
+
+            <RadioButton
+                android:id="@+id/rb_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seletcor_top_goodfood"
+                android:button="@null"
+                android:text="食材"
+                android:textColor="@drawable/selector_rb_text" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_localcookbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:background="@color/white"
+            android:text="本地菜谱"
+            android:textColor="@color/red" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <com.gzmelife.app.views.SlideShowView
+                    android:id="@+id/slideshowView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:background="@drawable/shape_gray_bg_2"
+                    android:drawableRight="@drawable/icon_search"
+                    android:gravity="left"
+                    android:padding="@dimen/spacing_small"
+                    android:text="请输入菜品名搜索"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+
+            <com.gzmelife.app.views.GridViewForScrollView
+                android:id="@+id/gv_foodclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false"
+                android:numColumns="4" />
+
+            <View style="@style/h_line" />
+
+            <Button
+                android:id="@+id/btn_allfood"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:text="查看全部菜谱"
+                android:textColor="@color/title_color" />
+
+            <View
+                style="@style/h_line"
+                android:layout_height="@dimen/spacing_large" />
+
+            <RadioGroup
+                android:id="@+id/rb_group"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/selector_rb_class"
+                    android:gravity="center"
+                    android:text="最新"
+                    android:textColor="@drawable/selector_rb_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/selector_rb_class"
+                    android:gravity="center"
+                    android:text="最热"
+                    android:textColor="@drawable/selector_rb_text" />
+
+                <RadioButton
+                    android:id="@+id/rb_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/selector_rb_class"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textColor="@drawable/selector_rb_text" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/rv_goodfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/lv_foodclass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_bg"
+        android:dividerHeight="@dimen/spacing_normal"
+        android:focusable="false"
+        android:visibility="gone" >
+    </ExpandableListView>
+
+</LinearLayout>

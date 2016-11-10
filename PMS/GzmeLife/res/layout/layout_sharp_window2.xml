@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_wechat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/icon_wechat"
+        android:text="微信好友"
+        android:textColor="@color/black_dark" />
+
+    <Button
+        android:id="@+id/btn_wechat2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/icon_wechat2"
+        android:text="微信朋友圈"
+        android:textColor="@color/black_dark" />
+
+    <Button
+        android:id="@+id/btn_upload2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:drawableTop="@drawable/icon_upload"
+        android:text="云菜谱"
+        android:textColor="@color/black_dark" />
+
+</LinearLayout>

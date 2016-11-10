@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gzmelife.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height_normal"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/rg_foodOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_gray_bg_2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_cookbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seletcor_top_goodfood"
+                android:button="@null"
+                android:text="菜谱"
+                android:textColor="@drawable/selector_rb_text" />
+
+            <RadioButton
+                android:id="@+id/rb_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/seletcor_top_goodfood"
+                android:button="@null"
+                android:text="食材"
+                android:textColor="@drawable/selector_rb_text" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_localcookbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:background="@color/white"
+            android:text="本地菜谱"
+            android:textColor="@color/red" />
+    </FrameLayout>
+
+    <ExpandableListView
+        android:id="@+id/lv_foodclass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_bg"
+        android:dividerHeight="@dimen/spacing_normal"
+        android:focusable="false" >
+    </ExpandableListView>
+
+</LinearLayout>

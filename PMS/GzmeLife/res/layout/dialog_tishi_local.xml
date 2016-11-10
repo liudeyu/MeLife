@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:textColor="#555555"
+        android:text="提示" 
+        />
+    <TextView 
+        android:id="@+id/tv_content"
+        android:gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:layout_marginBottom="30dp"
+       android:textColor="#888888"
+        android:layout_width="match_parent"
+        android:text="暂无收藏菜谱" 
+        />
+    <View 
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"/>
+    <TextView 
+        android:id="@+id/ok"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:layout_margin="15dp"
+        android:text="知道了" 
+        android:textColor="#03A9F4"
+        />
+</LinearLayout>

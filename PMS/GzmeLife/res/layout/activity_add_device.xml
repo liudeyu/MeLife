@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/tv_gray_dark_normal"
+                android:layout_margin="@dimen/spacing_normal"
+                android:text="局域网内已发现设备 (0)" />
+
+            <com.gzmelife.app.views.ListViewForScrollView
+                android:id="@+id/lv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal" />
+
+            <TextView
+                style="@style/tv_gray_dark_normal"
+                android:layout_margin="@dimen/spacing_normal"
+                android:text="都不是我的设备，继续添加新设备" />
+
+            <Button
+                android:id="@+id/bt_addDevice"
+                style="@style/btn_full_width_white_text_red_bg"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:text="添加新设备" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

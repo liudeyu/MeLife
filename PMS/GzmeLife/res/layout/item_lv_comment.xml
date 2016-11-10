@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gzmelife.app.views.CircleImageView
+        android:id="@+id/civ_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/font_small"
+        android:src="@drawable/icon_default" >
+    </com.gzmelife.app.views.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/font_small"
+        android:layout_toRightOf="@+id/civ_icon"
+        android:text="张三"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Name"
+        android:layout_marginTop="@dimen/font_small"
+        android:layout_toRightOf="@+id/civ_icon"
+        android:text="鸡肉又滑又嫩"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/font_small" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_comment"
+        android:background="#e6eaed" />
+
+</RelativeLayout>

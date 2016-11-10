@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <ListView
+        android:id="@+id/lv_pmsWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/pic_no_data" />
+
+        <TextView
+            style="@style/tv_gray_normal"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:gravity="center"
+            android:text="你现在不在设备广播范围内，\n检测不到设备"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_gray_normal"
+                android:text="1、请检查设备电源是否接通" />
+
+            <TextView
+                style="@style/tv_gray_normal"
+                android:text="2、距离是否过远，请靠近设备重试。" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

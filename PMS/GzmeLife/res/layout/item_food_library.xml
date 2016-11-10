@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_normal"
+        android:text="我靠"
+        android:drawableLeft="@drawable/ic_title_color_line"
+        android:layout_marginLeft="@dimen/spacing_small"
+          android:layout_marginRight="@dimen/spacing_small"
+          android:layout_marginTop="@dimen/spacing_small"
+          android:drawablePadding="@dimen/spacing_normal"
+        />
+    
+    <com.gzmelife.app.views.GridViewForScrollView
+        android:id="@+id/gv_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_marginRight="@dimen/spacing_small"
+          android:layout_marginBottom="@dimen/spacing_small"
+          android:padding="@dimen/spacing_small"
+   
+          
+        ></com.gzmelife.app.views.GridViewForScrollView>
+
+</LinearLayout>

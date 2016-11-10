@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layout_pic"
+        android:layout_width="@dimen/icon_size_small"
+        android:layout_height="@dimen/icon_size_small"
+        android:clickable="true" >
+
+        <com.gzmelife.app.views.CircleImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:src="@drawable/icon_pms_file" />
+
+        <com.gzmelife.app.views.CircleImageView
+            android:id="@+id/iv_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:src="@drawable/icon_checked" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_black_normal"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="川菜" />
+
+</LinearLayout>

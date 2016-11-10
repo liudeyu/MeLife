@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/layout_base_title" >
+    </include>
+
+ <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:padding="5dp"
+        android:hint="请输入您要评价的内容"
+        android:textSize="15.4sp"
+        android:layout_marginTop="10dp" />
+<!-- <com.gzmelife.app.views.ContainsEmojiEditText
+    android:id="@+id/et_content"
+      android:layout_width="match_parent"
+      android:layout_height="144dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:padding="5dp"
+        android:hint="请输入您要评价的内容"
+        android:textSize="15.4sp"
+        android:layout_marginTop="10dp"/> -->
+    <Button
+        android:id="@+id/bt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="17.4sp"
+        android:background="@drawable/shape_sure_comment"
+        android:text="确定"
+        android:textColor="#fff" />
+
+</LinearLayout>

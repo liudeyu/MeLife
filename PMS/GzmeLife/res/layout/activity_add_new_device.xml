@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_base_title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/ll_normal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_router_wifi" />
+
+            <Button
+                android:id="@+id/btn_wifi_router"
+                style="@style/btn_full_width_white_text_blue_bg"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="我有无线路由器 (推荐)" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/spacing_huge"
+                android:scaleType="centerInside"
+                android:src="@drawable/pic_pms_wifi" />
+
+            <Button
+                android:id="@+id/btn_pms_wifi"
+                style="@style/btn_full_width_white_text_red_bg"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="我没有无线路由器" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

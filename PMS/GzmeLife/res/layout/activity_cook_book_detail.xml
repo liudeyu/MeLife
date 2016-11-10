@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+   >
+
+    <include
+        android:id="@+id/top"
+         layout="@layout/layout_base_title" >
+    </include>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/top"
+       
+      >
+<!--   android:layout_above="@+id/ll_bottom" -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginBottom="100dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"/>
+            <ImageView
+                android:id="@+id/iv_edtPhoto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_photo"
+                android:adjustViewBounds="true"
+                android:layout_margin="@dimen/spacing_small"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                />
+
+            <LinearLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_photo"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="菜谱名:" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/spacing_small"
+                    android:paddingRight="@dimen/spacing_small"
+                    android:textColor="@color/black_dark" />
+
+                <Button
+                    android:id="@+id/btn_etCookBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_titlecolor_bg"
+                    android:padding="@dimen/spacing_small"
+                    android:layout_marginRight="5dp"
+                    android:text="编辑菜谱"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl1"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_describe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/btn_etCookBook"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="描 述:" />
+
+                <EditText
+                    
+                    android:id="@+id/et_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:enabled="false"
+                    android:hint="请输入关于这道菜的描述"
+                    android:minHeight="45dp"
+                    android:padding="@dimen/spacing_small"
+                    android:textColor="@color/black_dark"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="食  材：" />
+
+                <TextView
+                    android:id="@+id/tv_material2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入关于这道菜的食材"
+                    android:minHeight="45dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/spacing_small"
+                    android:paddingBottom="@dimen/spacing_normal"
+                    android:textColor="@color/black_dark"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="步骤" />
+
+            <com.gzmelife.app.views.ListViewForScrollView
+                android:id="@+id/lv_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_step"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:divider="@color/transparent"
+                android:dividerHeight="0dp" 
+                  android:layout_marginTop="@dimen/spacing_small"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lv_step"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+  <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btn_uploading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" 
+            android:text="上传到智能锅"
+            android:drawableTop="@drawable/iconupdate"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_sharp2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" 
+            android:drawableTop="@drawable/icon_bottom_sharp"
+            android:text="分享">
+        </Button>
+    </LinearLayout> 
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rl_layout"
+        android:layout_marginBottom="3dp"
+         >
+        <com.gzmelife.app.views.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tu"
+            android:layout_margin="@dimen/spacing_small"
+             />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="口味" 
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_head"
+              android:padding="@dimen/spacing_small"
+              android:textColor="@color/black_dark"/>
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_cb_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/spacing_small"
+            />
+    </RelativeLayout>
+     <include layout="@layout/view_gray_line" />
+    
+    <com.gzmelife.app.views.GridViewForScrollView
+        android:id="@+id/gv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:numColumns="4"
+        >
+	</com.gzmelife.app.views.GridViewForScrollView>
+</LinearLayout>

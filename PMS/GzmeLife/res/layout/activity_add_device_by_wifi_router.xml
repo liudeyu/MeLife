@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <TextView
+        style="@style/tv_black_huge"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:text="PMS" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_normal" >
+
+        <EditText
+            android:id="@+id/et_ssid"
+            style="@style/et_transparent_full_width_black_drawable_left"
+            android:drawableLeft="@drawable/icon_wifi"
+            android:drawablePadding="@dimen/spacing_small"
+            android:editable="false"
+            android:text="kapp_p" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:background="#e6eaed" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            style="@style/et_transparent_full_width_black_drawable_left"
+            android:drawableLeft="@drawable/icon_pwd"
+            android:drawablePadding="@dimen/spacing_small"
+            android:editable="true"
+            android:hint="请输入WiFi密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:onClick="onClick"
+        android:text="配置" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/tv_title_normal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="@string/settings_tip" />
+
+</LinearLayout>

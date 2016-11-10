@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_bg_color">#f5f6f1</color>
+    <color name="titlebarbg">#ffffff</color>
+    <color name="title_color">#ff5b80</color>
+    <color name="gap_line">#e6eaed</color>
+    <color name="face_color">#4d000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <!--<color name="viewfinder_mask">#60000000</color>-->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_gray_bg">#33000000</color>
+    <color name="transparent_gray_bg1">#66000000</color>
+    <color name="black">#3f3f3f</color>
+    <color name="black_dark">#333333</color>
+    <color name="black_normal">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0eb618</color>
+    <color name="blue_light">#55BFFFFE</color>
+    <color name="red">#ff0000</color>
+    <color name="orange">#FF6129</color>
+    <color name="orange_weak">#F19601</color>
+    <color name="gray_more">#636363</color>
+    <color name="gray_dark">#B3B3B3</color>
+    <color name="gray_light">#b0b0b0</color>
+    <color name="gray">#888888</color>
+    <color name="gray_bg">#dadada</color>
+    <color name="text_color">#3f3f3f</color>
+    <color name="login_icon">#868686</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!-- 自定义进度条颜色 -->
+    <color name="bar_orange">#FFFFAC0B</color>
+    <color name="bar_gay">#FFD8D8D8</color>
+    <!-- comment -->
+    <color name="comment_name">#17839c</color>
+    <color name="comment_content">#888888</color>
+    <color name="comment_time">#b3b3b3</color>
+    <!-- settings item -->
+    <color name="settings_item">#3f3f3f</color>
+
+    <!-- press background -->
+    <color name="background_list">#D9D9D9</color>
+    <color name="background_button">#B0D9D9D9</color>
+    <color name="bgColor">#F0F0F0 </color>
+    <!-- dialog color -->
+    <color name="dialog_text_color">#898989</color>
+    <color name="dialog_text_color_ed">#0183cf</color>
+    <color name="dialog_space_color">#d2d2d2</color>
+
+    <!-- contacts color -->
+    <color name="titlebtnpressed">#0066a6</color>
+    <color name="comment">#f2eef7</color>
+    <color name="panelbg1">#6e6d6c</color>
+    <color name="promptbarbg">#29c5d3</color>
+    <color name="dotbg">#e8e8e8</color>
+    <color name="newsitembg">#e5e5e5</color>
+    <color name="itembar">#505050</color>
+    <color name="itempressbg">#dedede</color>
+    <color name="backpressbg">#893e11</color>
+    <color name="commenttitlebar">#b3b3b3</color>
+    <color name="panelbg">#ebeaea</color>
+    <color name="contactitemsbg">#eaeaea</color>
+    <color name="commentdetailpress">#a5a5a5</color>
+    <color name="darkfontbg">#5f5f5f</color>
+    <color name="lightfontbg">#a3a3a3</color>
+    <color name="texthint">#dddddd</color>
+    <color name="redbg">#f80808</color>
+    <color name="bluefont">#06b0e8</color>
+    <color name="navbarbg">#ebedec</color>
+    <color name="blueline">#27a2dc</color>
+    <color name="big_background">#ececec</color>
+    <color name="green">#46e589</color>
+    <color name="yellow">#E9D932</color>
+    <color name="blue_2">#52d6ff</color>
+    <color name="blue_3">#4ED9FF</color>
+    <color name="pink">#FF6AA5</color>
+    <color name="purple">#990099</color>
+    <color name="red1">#fe85a2</color>
+    <color name="red2">#ff4a83</color>
+
+    <!-- together -->
+    <color name="yellow_weak">#FEF5E6</color>
+    <color name="red_seak">#E70050</color>
+    <!-- <color name="red_seak">#E6004F</color> -->
+
+    <color name="guide_1">#e70050</color>
+    <color name="guide_2">#faaf3a</color>
+    <color name="guide_3">#9bcd58</color>
+    <color name="guide_4">#5ebfe9</color>
+    <color name="guide_5">#e70050</color>
+    <color name="start_page">#C8003A</color>
+
+</resources>

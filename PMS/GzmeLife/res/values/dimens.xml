@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- detail top image -->
+    <dimen name="detail_top_image">200dp</dimen>
+    <!-- top image -->
+    <dimen name="top_image">170dp</dimen>
+    
+    <!-- ad banner size -->
+    <dimen name="ad_banner_height">140dp</dimen>
+
+    
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    
+    <!-- font sizes -->
+    <dimen name="font_huge">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">24dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_normal">12dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+    <!-- typical sizes of buttons -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">44dp</dimen>
+    <dimen name="button_height_small">40dp</dimen>
+    <dimen name="button_height_tiny">30dp</dimen>
+    <dimen name="button_width_large">60dp</dimen>
+    <dimen name="button_width_huge">80dp</dimen>
+    <dimen name="button_width_normal">44dp</dimen>
+    <dimen name="button_radius">5dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="item_width_tiny">16dp</dimen>
+    <dimen name="item_width_small">32dp</dimen>
+    <dimen name="item_width_normal">48dp</dimen>
+    <dimen name="item_width_large">64dp</dimen>
+    <dimen name="item_width_huge">72dp</dimen>
+    <dimen name="item_height_large">48dp</dimen>
+    <dimen name="item_height_normal">44dp</dimen>
+    <dimen name="item_height_small">40dp</dimen>
+
+    <!-- titlebar height -->
+    <dimen name="title_height_normal">48dp</dimen>
+
+    <!-- navigationbar height -->
+    <dimen name="navigation_height_normal">60dp</dimen>
+    <dimen name="navigation_height_small">48dp</dimen>
+
+    <!-- searchbar height -->
+    <dimen name="search_height_normal">56dp</dimen>
+
+    <!-- commentbar height -->
+    <dimen name="comment_height_normal">56dp</dimen>
+
+    <!-- edittext height -->
+    <dimen name="edittext_height_large">48dp</dimen>
+    <dimen name="edittext_height_normal">44dp</dimen>
+    <dimen name="edittext_height_small">40dp</dimen>
+
+    <!-- sharedialog icon -->
+    <dimen name="share_icon_width_normal">48dp</dimen>
+
+    <!-- icon size -->
+    <dimen name="icon_size_arrow_right">20dp</dimen>
+    <dimen name="icon_size_tiny">25dp</dimen>
+    <dimen name="icon_size_tinest">20dp</dimen>
+    <dimen name="icon_size_face_30">30dp</dimen>
+    <dimen name="icon_size_small">50dp</dimen>
+    <dimen name="icon_size_normal">64dp</dimen>
+    <dimen name="icon_size_large">72dp</dimen>
+
+    <!-- popup windows size -->
+    <dimen name="popup_width">112dp</dimen>
+    <dimen name="popup_height">40dp</dimen>
+
+    <!-- contacts size -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

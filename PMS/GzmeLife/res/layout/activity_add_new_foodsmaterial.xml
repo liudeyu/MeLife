@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_category"
+            style="@style/ll_normal"
+            android:onClick="onClick"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/tv_black_normal"
+                android:text="食材所属分类" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                style="@style/tv_black_normal"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/spacing_small"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="自定义食材" />
+        </RelativeLayout>
+
+        <include layout="@layout/view_gray_line" />
+
+        <LinearLayout style="@style/ll_normal_2" >
+
+            <TextView
+                style="@style/tv_black_normal"
+                android:text="食材名"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_foodMaterialName"
+                style="@style/et_full_width_white_bg_left"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="请输入食材名"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/et_foodMaterialWight"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="@dimen/spacing_small"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" >
+            </EditText>
+
+            <TextView
+                style="@style/tv_black_normal"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:hint="g"
+                android:paddingBottom="8dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <include layout="@layout/view_gray_line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:text="保存" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height_normal"
+    android:background="@color/titlebarbg" >
+
+    <ImageView
+        android:id="@+id/iv_titleLeft"
+        android:layout_width="@dimen/button_width_normal"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/selector_normal"
+        android:onClick="back"
+        android:padding="@dimen/spacing_large"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_left" />
+	 <TextView
+        android:id="@+id/tv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_titleLeft"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:text="美食" />
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_title_large"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="标题" />
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_titleRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_tiny"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:paddingRight="@dimen/spacing_small"
+        android:text="保存"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_normal"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_titleRight"
+        android:layout_width="@dimen/title_height_normal"
+        android:layout_height="@dimen/title_height_normal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/spacing_tiny"
+        android:adjustViewBounds="true"
+        android:background="@drawable/selector_normal"
+        android:padding="@dimen/spacing_normal"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e6eaed" />
+
+</RelativeLayout>

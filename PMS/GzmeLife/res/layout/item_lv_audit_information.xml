@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/spacing_normal" >
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/tv_black_normal"
+            android:layout_alignParentLeft="true"
+            android:text="text" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/tv_gray_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_result"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:text="2015-01-21" />
+
+        <CheckBox
+            android:id="@+id/cb_tip"
+            android:layout_width="21.4dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_cb_arrow"
+            android:button="@null"
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/tv_gray_small"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_small"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/spacing_huge"
+        android:text="提示:" />
+
+    <include
+        android:id="@+id/layout_gap"
+        layout="@layout/view_gray_line" />
+
+</LinearLayout>

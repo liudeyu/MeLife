@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_mian" />
+
+    <RadioGroup
+        android:id="@+id/rg_mian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/spacing_tiny"
+        android:paddingTop="@dimen/spacing_tiny" >
+
+        <RadioButton
+            android:id="@+id/rb_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_device"
+            android:gravity="center"
+            android:text="设备"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="@dimen/font_small" />
+
+        <RadioButton
+            android:id="@+id/rb_cookBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_cookbook"
+            android:gravity="center"
+            android:text="私厨"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="@dimen/font_small" />
+
+        <RadioButton
+            android:id="@+id/rb_goodFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_food"
+            android:gravity="center"
+            android:text="美食"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="@dimen/font_small" />
+
+        <RadioButton
+            android:id="@+id/rb_personalCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_rb_mine"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_rb_text"
+            android:textSize="@dimen/font_small" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rg_mian"
+        android:background="@color/gap_line" />
+
+</RelativeLayout>

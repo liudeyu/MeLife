@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.gzmelife.app.views.GridViewForScrollView
+        android:id="@+id/gv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/spacing_normal"
+        android:paddingTop="@dimen/spacing_normal"
+        android:verticalSpacing="@dimen/spacing_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_small" />
+
+</LinearLayout>

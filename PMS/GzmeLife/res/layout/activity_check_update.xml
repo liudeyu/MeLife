@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <TextView
+        android:id="@+id/tv_appVersion"
+        style="@style/tv_black_normal"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="当前app版本号为:"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_updateApp"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:onClick="onClick"
+        android:text="更新app"
+        android:visibility="gone"  />
+
+    <TextView
+        android:id="@+id/update_pms_text"
+        style="@style/tv_black_normal"
+        android:layout_margin="@dimen/spacing_normal"
+        android:text="当前PMS版本号为:" />
+
+    <Button
+        android:id="@+id/update_pms"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:onClick="onClick"
+        android:text="更新PMS程序" />
+
+</LinearLayout>

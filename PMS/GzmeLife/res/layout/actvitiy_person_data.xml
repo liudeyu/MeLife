@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        style="@style/ll_normal_2"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/tv_black_normal"
+            android:text="性别:" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height_small"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_rb"
+                android:paddingLeft="@dimen/spacing_small"
+                android:tag="1"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:button="@drawable/selector_rb"
+                android:paddingLeft="@dimen/spacing_small"
+                android:tag="2"
+                android:text="女" />
+
+            <RadioButton
+                android:id="@+id/rb_secrecy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_rb"
+                android:paddingLeft="@dimen/spacing_small"
+                android:tag="3"
+                android:text="保密" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+    <LinearLayout style="@style/ll_normal_2" >
+
+        <TextView
+            style="@style/tv_black_normal"
+            android:layout_gravity="center"
+            android:text="邮箱:" />
+
+        <TextView
+            style="@style/tv_black_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:text="邮箱"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/et_full_width_white_bg_right"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:maxLength="32"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+    <LinearLayout style="@style/ll_normal_2" >
+
+        <TextView
+            style="@style/tv_black_normal"
+            android:layout_gravity="start"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:text="个性签名:" />
+
+        <EditText
+            android:id="@+id/et_autograph"
+            style="@style/et_full_width_white_bg_right"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="top|left"
+            android:maxLength="50" />
+    </LinearLayout>
+
+    <include layout="@layout/view_gray_line" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/btn_full_width_white_text_red_bg"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:onClick="onClick"
+        android:text="保存" />
+
+</LinearLayout>

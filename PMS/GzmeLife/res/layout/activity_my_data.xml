@@ -1,0 +1,303 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/ll_normal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="头像" />
+
+                <com.gzmelife.app.views.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="@dimen/icon_size_small"
+                    android:layout_height="@dimen/icon_size_small"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_default" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout style="@style/layout_person_center" >
+
+                <TextView
+                    android:id="@+id/tv_0"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="昵称" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_right0"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/icon_size_arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et_nickName"
+                    style="@style/et_transparent_full_width_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_arrow_right0"
+                    android:layout_toRightOf="@id/tv_0"
+                    android:hint="未填写"
+                    android:maxLength="10"
+                    android:padding="0dp" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_cookingStyle"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    android:id="@+id/tv_cookingStyle"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的菜系" />
+
+                <TextView
+                    android:id="@+id/tv_myCookingStyle"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_cookingStyle"
+                    android:drawablePadding="@dimen/spacing_tiny"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="right"
+                    android:hint="未选择" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_taste"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    android:id="@+id/tv_myTaste"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="我的口味" />
+
+                <TextView
+                    android:id="@+id/tv_taste"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_myTaste"
+                    android:drawablePadding="@dimen/spacing_tiny"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="right"
+                    android:hint="未选择" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_personData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout style="@style/layout_person_center" >
+
+                    <TextView
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/spacing_tiny"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:hint="未选择" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_gray_line" />
+
+                <RelativeLayout style="@style/layout_person_center" >
+
+                    <TextView
+                        android:id="@+id/tv_myEmail"
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="邮箱" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_myEmail"
+                        android:drawablePadding="@dimen/spacing_tiny"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:hint="未填写"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_gray_line" />
+
+                <RelativeLayout style="@style/layout_person_center" >
+
+                    <TextView
+                        android:id="@+id/tv_sign"
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="个性签名" />
+
+                    <TextView
+                        android:id="@+id/tv_autograph"
+                        style="@style/tv_black_normal"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_sign"
+                        android:drawablePadding="@dimen/spacing_tiny"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="未填写"
+                        android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_birthplace"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="出生地" />
+
+                <TextView
+                    android:id="@+id/tv_birthplace"
+                    style="@style/tv_black_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/spacing_tiny"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="right"
+                    android:hint="未填写" />
+            </LinearLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_residence"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="居住地" />
+
+                <TextView
+                    android:id="@+id/tv_residence"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/spacing_tiny"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:hint="未填写" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout
+                android:id="@+id/layout_contact_info"
+                style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="联系信息" />
+
+                <TextView
+                    android:id="@+id/tv_contact_info"
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/spacing_tiny"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:hint="未填写" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_gray_line" />
+
+            <RelativeLayout style="@style/layout_person_center" >
+
+                <TextView
+                    style="@style/tv_black_normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="加入时间" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_right9"
+                    android:layout_width="15dp"
+                    android:layout_height="@dimen/icon_size_arrow_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_joinTime"
+                    style="@style/tv_black_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_arrow_right9"
+                    android:text="" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="50dp"
+                layout="@layout/view_gray_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

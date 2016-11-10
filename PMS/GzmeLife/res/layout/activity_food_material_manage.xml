@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_normal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_normal"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_myFoodMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="我的食材库"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/font_normal" />
+
+            <RadioButton
+                android:id="@+id/rb_standardFoodMaterial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="标准食材库"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+        </RadioGroup>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/view_myFoodMaterial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@color/title_color" />
+
+        <View
+            android:id="@+id/view_standardFoodMaterial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@color/title_color"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_myFoodMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_noData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/pic_no_data" />
+
+            <TextView
+                style="@style/tv_gray_normal"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:gravity="center"
+                android:text="您可到标准食材库添加食材~" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandLv_myFoodMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp" >
+        </ExpandableListView>
+
+        <LinearLayout
+            android:id="@+id/layout_myFoodMaterialBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_tiny"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_addFoodMaterial"
+                style="@style/btn_full_width_white_text_blue_bg"
+                android:text="添加自定义食材" />
+
+            <Button
+                android:id="@+id/btn_manageFoodMaterial"
+                style="@style/btn_full_width_white_text_red_bg"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="管理我的食材库" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_myFoodMaterialManage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/layout_gap"
+                layout="@layout/view_gray_line" />
+
+            <LinearLayout
+                style="@style/ll_normal"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_clearSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_tiny"
+                        android:layout_height="@dimen/icon_size_tiny"
+                        android:src="@drawable/icon_cancel" />
+
+                    <TextView
+                        style="@style/tv_gray_more_normal"
+                        android:layout_marginLeft="@dimen/spacing_tiny"
+                        android:text="清除选择" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="@dimen/icon_size_tiny"
+                    android:layout_height="@dimen/icon_size_tiny"
+                    android:src="@drawable/icon_delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_standardFoodMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout style="@style/ll_normal" >
+
+         
+			<Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/spacing_tiny"
+                    android:layout_marginRight="@dimen/spacing_tiny"
+                    android:background="@drawable/sousuo_bj"
+                    android:gravity="left|center"
+                    android:padding="@dimen/spacing_small"
+                    android:text="请输入食材名搜索"
+                    android:textSize="14sp"
+                    android:textColor="@color/black" />
+               
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandLv_standardFoodMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:paddingTop="@dimen/spacing_normal" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</LinearLayout>

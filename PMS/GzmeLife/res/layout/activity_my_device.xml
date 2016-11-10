@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size_small"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/spacing_normal"
+        android:paddingRight="@dimen/spacing_normal" >
+
+        <TextView
+            style="@style/tv_black_normal"
+            android:layout_centerVertical="true"
+            android:text="设备号:" />
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="@dimen/icon_size_face_30"
+            android:layout_height="@dimen/icon_size_face_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/spacing_tiny"
+            android:src="@drawable/icon_scan" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:listSelector="@color/transparent" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/layout_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/pic_no_data" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_gray_normal"
+                android:text="您还没有添加设备" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
