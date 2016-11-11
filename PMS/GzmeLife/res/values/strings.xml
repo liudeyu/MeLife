@@ -7,7 +7,7 @@
     <string name="settings_tip"><u>配置指南</u></string>
     <string name="title_activity_add_new_device">AddNewDeviceActivity</string>
     <string name="title_activity_image">ImageActivity</string>
-    
+
     <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_hint_loading">正在加载...</string>

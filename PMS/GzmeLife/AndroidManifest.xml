@@ -3,19 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.gzmelife.app"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="21"
-        tools:overrideLibrary="com.umeng.fb, android.support.v7.appcompat"
-        />
-    <!--tools:overrideLibrary="com.umeng.fb, android.support.v7.appcompat"20160928-->
+        tools:overrideLibrary="com.umeng.fb, android.support.v7.appcompat" />
+    <!-- tools:overrideLibrary="com.umeng.fb, android.support.v7.appcompat"20160928 -->
     <!-- Required -->
     <permission
         android:name="com.gzmelife.app.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
-     <!-- youmeng -->
+    <!-- youmeng -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -30,18 +29,19 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-    
+
     <!-- Required -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
-    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
-    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
-    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+
 
     <!-- 蓝牙分享所需的权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -58,321 +58,261 @@
     <uses-permission android:name="android.permission.ACCESS_GPS" />
     <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION" />
-    <!--<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />-->
-    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission.INTERNET" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
-    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
-    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
-    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
-    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
-    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />-->
 
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
     <application
-        android:name="com.gzmelife.app.KappAppliction"
+        android:name=".KappAppliction"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme">
-    <!--tools:replace="android:icon, android:theme"/>20160928-->
+
+        <!-- tools:replace="android:icon, android:theme"/>20160928 -->
 
         <activity
             android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.CookBoodFoodSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CookBookStandardFoodMaterialDetailsActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.gzmelife.app.tools.ImageShower"
+            android:name=".tools.ImageShower"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CookFoodMaterialManageActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.StartActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
         <activity
             android:name=".activity.CookFoodsMaterialManageActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MyFoodMangerSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MyFoodsMangerSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-        
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FillInInfoActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FoodLibraryActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.NetCookBookDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.NetCookBooksDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CommentDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SecondFoodClassifyActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.GoodFoodSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FoodMangerSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FoodMangerSearchsActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SearchDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".hhd.SearchsDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.SearchssDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.GoodFoodSearchDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.FoodsMangerSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-         <activity
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activity.FoodssMangerSearchActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.ImageActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CollectionActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.LoginActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.ForgetpwdAndRegisterActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SecondaryFoodClassificationActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SecondClassifyActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CookBookDetailActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddDevicesActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddDeviceByWifiRouterActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.ProtocolActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddDeviceByPMSWifiActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddNewDeviceActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.DeviceDetailActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.DeviceCenterActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MyDataActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SettingsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CheckUpdateActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.ContactInfoActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.RouterTipActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".hhd.AddStepActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AuditInformationActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.CookingStyleActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.PersonDataActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.TasteActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AboutUsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FAQActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MyDeviceActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.zxing.activity.CaptureActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.SystemMsgActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.MyUploadCookbookActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FoodMaterialManageActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddNewFoodMaterialActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AddNewFoodsMaterialActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.FoodMaterialCategoryActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.StandardFoodMaterialDetailsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.StandardFoodsMaterialDetailsActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".activity.AllFoodActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        
-         <!-- qq -->
-        
+            android:screenOrientation="portrait"></activity>
+
+        <!-- qq -->
+
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -393,7 +333,7 @@
         <service
             android:name="cn.jpush.android.service.PushService"
             android:enabled="true"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.REGISTER" />
                 <action android:name="cn.jpush.android.intent.REPORT" />
@@ -406,7 +346,7 @@
             android:name="cn.jpush.android.service.PushReceiver"
             android:enabled="true"
             android:exported="false">
-            <intent-filter android:priority="1000" >
+            <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
 
                 <category android:name="com.gzmelife.app" />
@@ -427,7 +367,7 @@
         <activity
             android:name="cn.jpush.android.ui.PushActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="cn.jpush.android.ui.PushActivity" />
 
@@ -439,20 +379,21 @@
         <service
             android:name="cn.jpush.android.service.DownloadService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false"></service>
         <!-- Required SDK核心功能 -->
-		<receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
         <!-- User defined. 用户自定义的广播接收器 -->
-        <!--<receiver-->
-            <!--android:name="com.gzmelife.app.receiver.JPushReceiver"-->
-            <!--android:enabled="true" >-->
-        <!--</receiver>-->
+        <!-- <receiver -->
+        <!-- android:name="com.gzmelife.app.receiver.JPushReceiver" -->
+        <!-- android:enabled="true" > -->
+        <!-- </receiver> -->
         <!-- User defined. 用户自定义的广播接收器 -->
         <receiver
-            android:name="com.gzmelife.app.receiver.JPushReceiver"
-            android:exported="false"
-             android:enabled="true" >
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
 
                 <!-- Required 用户注册SDK的intent -->
@@ -488,19 +429,19 @@
             android:value="ebadef203d25d60eeba0a710" />
         <!-- 分享 -->
 
--
+        -
         <activity
             android:name="com.mob.tools.MobUIShell"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
+            android:windowSoftInputMode="stateHidden|adjustResize">
 
             <!-- Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类， 这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。 <meta-data android:name="Adapter" android:value="cn.sharesdk.demo.MyAdapter" /> -->
 
 
             <!-- Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是 “db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权 -->
 
--
+            -
             <intent-filter>
                 <data android:scheme="db-7janx53ilz11gbs" />
 
@@ -512,8 +453,8 @@
 
             <!-- 如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW 事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置， 则分享结束以后不能得到正确的回调 -->
 
--
-            <intent-filter android:priority="1000" >
+            -
+            <intent-filter android:priority="1000">
                 <data android:scheme="tencent1105085800" />
 
                 <action android:name="android.intent.action.VIEW" />
@@ -531,13 +472,14 @@
         <meta-data
             android:name="AuthorizeAdapter"
             android:value="cn.sharesdk.demo.MyAdapter" />
+
         <activity
             android:name="com.umeng.socialize.editorpage.ShareActivity"
             android:excludeFromRecents="true"
             android:theme="@style/Theme.UMDefault" />
 
-	<!-- 微信分享回调 -->
-		<activity
+        <!-- 微信分享回调 -->
+        <activity
             android:name="com.umeng.soexample.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
@@ -549,39 +491,32 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        
+
         <!-- 友盟更新 -->
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="56aae10167e58ee12100009a" />
-        <!--<meta-data-->
-            <!--android:name="UMENG_APPKEY"-->
-            <!--android:value="56aae10167e58ee12100009a" />-->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_APPKEY" -->
+        <!-- android:value="56aae10167e58ee12100009a" /> -->
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="kapp" />
-        <!--<meta-data-->
-            <!--android:name="UMENG_CHANNEL"-->
-            <!--android:value="kapp" />-->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="kapp" /> -->
 
         <service
             android:name="com.umeng.update.net.DownloadingService"
-            android:process=":DownloadingService" >
-        </service>
-        <!--<service-->
-            <!--android:name="com.umeng.update.net.DownloadingService"-->
-            <!--android:process=":DownloadingService" >-->
-        <!--</service>-->
+            android:process=":DownloadingService"></service>
+        <!-- <service -->
+        <!-- android:name="com.umeng.update.net.DownloadingService" -->
+        <!-- android:process=":DownloadingService" > -->
+        <!-- </service> -->
 
         <activity
             android:name="com.umeng.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-
-
-
-
-
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
 
         <!--
         <activity
@@ -591,19 +526,16 @@
         -->
         <activity
             android:name=".ImageActivity"
-            android:label="@string/title_activity_image" >
-        </activity>
+            android:label="@string/title_activity_image"></activity>
         <activity
             android:name=".ImageToDetailActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-        
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="cn.jpush.android.ui.PopWinActivity"
             android:exported="false"
-            android:theme="@style/MyDialogStyle">
-        </activity>
+            android:theme="@style/MyDialogStyle"></activity>
+        <activity android:name=".ldy.Main2Activity"></activity>
     </application>
 
 </manifest>
